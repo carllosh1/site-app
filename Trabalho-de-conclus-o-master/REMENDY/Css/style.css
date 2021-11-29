@@ -1,0 +1,559 @@
+/* Geral */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    list-style: none;
+    border:none;
+}
+
+
+/* Corpo */
+.container {
+width: 100vw;
+height: 100vh;
+padding: 5%;
+display: flex;
+flex-direction: column;
+align-items: center;
+background: #c0392b;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #8e44ad, #c0392b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Projeto */
+.app {
+    margin-bottom: 5%;
+    width: 100%;
+    height: 700px;
+    max-height: 700px;
+    max-width: 360px;
+    border-radius: 35px;
+    background-color: black;
+    position: absolute;
+}
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+    width: 90%;
+    padding: 3%;
+}
+
+header{
+    margin-top: 15px;
+    height: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+img {
+    margin-top: 36px;
+    width: 250px;
+    height: 250px;
+
+}
+/*************/
+
+/* MAIN */
+
+main {
+   
+    align-self: center;
+    position: relative;
+    right: 27px;
+  
+}
+.main1{
+    margin-top: 60px;
+}
+.titulo{
+    text-align: left;
+    letter-spacing: 3px;
+    
+}
+
+.texto{
+    font-size: 15px;
+    margin-top: 15px;
+    width: 210px;
+    line-height: 25px;
+    color: gray;
+}
+
+/* Footer */
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: none;
+    margin-top:58px ;
+    height: 52px;
+    border-radius: 30px;
+    width: 310px;
+    background-color:#47419B ; 
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(231, 231, 231);
+    font-size: 15px;
+}
+
+.button:hover{
+    background-color: #47419bd5;
+}
+
+footer{
+    margin-top: 60px;
+    width: 130px;
+    height: 4px;
+    border-radius: 100px;
+    background-color: rgb(49, 49, 49);
+}
+/******************/
+
+
+/* Detalhes */
+.horario {
+    font-size: 15px;
+}
+
+h1 {
+    font-family: 'Flamenco';
+    text-transform: uppercase;
+    
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    
+}
+/***********/
+
+
+/* Tela de cadastro */
+
+    /* Titulo */
+    .main2 {
+        right: 0;
+      
+    }
+    .titulo2 {
+        text-align: center;
+        text-transform: none;
+    }
+
+    /* Button */
+    .button2 {
+        margin-top: 25px;
+    }
+    .grey {
+        background-color: rgb(53, 53, 53);
+        color: rgb(231, 231, 231);
+    }
+
+    .tela2{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+
+/* Tela de Estoque */
+
+    /* Titulo */
+    .main3 {
+        right: 0;
+        width: 90%;
+      
+    }
+    .titulo3 {
+        text-align: center;
+        text-transform: none;
+    }
+
+   .adicionar {
+       width: 65px;
+       height: 65px;
+        left: 130px;
+        position: relative;
+        margin: 0 0 30px 0;
+    }
+    
+    .footer3{
+        margin-top: -30px;
+    }
+
+    /* Bloco remedio */
+
+    .blocoRemedio{
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    /* IMG */
+    .ftremedio img{
+        width: 70px;
+        height: 70px;
+        margin-top: 0;
+    }
+
+    /* informações */
+    .info{
+        position: relative;
+        right: 20px;
+        letter-spacing: 0.5px;
+    }
+
+    .info h2 {
+        font-size: 20px;
+        font-weight: lighter;
+    }
+
+    .margin{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .info p {
+        font-size: 10px;
+        color: grey;
+    }
+
+    /* Icones */
+    .iconsremedio {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 60px;
+    }
+    
+    .ticon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .lineEstoque {
+        position: relative;
+        left: 3px;
+        margin: 0 auto;
+        background-color: rgb(153, 153, 153);
+        width: 95%;
+        height: 2px;
+    }
+    
+    .tela3{
+        opacity: 0;
+    visibility: hidden;
+    }
+/* Tela de sicronizar*/
+.main4 {
+    right: 0;
+    margin-top: 60px;
+    
+}
+.button4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: none;
+    margin-top:58px ;
+    height: 52px;
+    border-radius: 30px;
+    width: 310px;
+    background-color:#47419B ; 
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(248, 248, 248);
+    font-size: 16px;
+    margin-bottom:60px;
+}
+.titulo4{
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: none;
+    color: rgb(233, 233, 233);
+}
+
+.tela4{
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* tela relatar problema*/
+.main5 {
+    right: 0;
+    
+}
+.titulo5{
+    font-size:30px;
+    letter-spacing: 3px;
+    text-transform: none;
+    text-align: center;
+    width:250px;
+    margin:0 auto;
+    color: rgb(240, 240, 240);
+}
+.subtitulo5{
+    font-weight: lighter;
+    color: #47419B;
+}
+.container5{
+    text-align:center;
+    margin-top: 48px;
+    
+}
+.texto5{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom:30px;
+    line-height: 25px;
+    color: rgb(128, 128, 128);
+}
+.linha5{
+    width: 350px;
+    height:1px;
+    background-color: rgb(180, 180, 180);
+    margin-bottom:30px;
+}
+.linhaF{
+    width: 350px;
+    height:1px;
+    background-color: rgb(180, 180, 180);
+    
+}
+.footer5{
+    margin-top: 30px;
+}
+
+.tela5{
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* tela dispositivo*/
+
+.tela6{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.main6 {
+    right: 0;
+    width: 90%;
+    margin-top: 25px;
+    margin-bottom: 460px;
+}
+
+/* EFEITOS JS */
+
+.aparecer{
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s ease-in;
+}
+
+.esconder{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease-in;
+}
+
+/* efeitos hambuguer */
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top:25px;
+    width:100%;
+  }
+
+  /* efeitos hambuguer cadastro */
+.menuB{
+    width:15px;
+    height:35px;
+    background: black;
+    border-radius: 50%;
+    font-size:30px;
+    z-index: 3;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+.menuB:hover{
+    cursor:pointer;
+  }
+
+.containerB{
+    height: 30px;
+    width:140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    visibility: hidden;
+    
+  }
+.itens{
+    overflow:hidden;
+    border-radius: 50%;
+    transition: 0.4s ease-in;
+    width: 30px;
+    height: 30px;
+    margin-left:2px;
+    margin-right:2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+  
+  }
+.item1 {
+    transition-delay: 0.2s;
+    background: red;
+    margin-right:4px;
+  }
+.item2 {
+    transition-delay: 0.3s;
+    background: #47419B;
+  }
+.item3 {
+    transition-delay: 0.4s;
+    background: #47419B;
+  }
+.item4 {
+    transition-delay: 0.5s;
+    background: #47419B;
+    
+  }
+.item1:hover, .item2:hover, .item3:hover, .item4:hover{
+   
+      opacity: 0.8;
+  }
+  
+.itens:hover{
+    cursor:pointer;
+  }
+.containerB-active{
+    opacity: 1;
+    visibility: visible;
+    
+}
+/* efeitos hambuguer Tela  estoque*/
+.menuB2{
+    width:15px;
+    height:35px;
+    background: black;
+    border-radius: 50%;
+    font-size:30px;
+    z-index: 3;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+.menuB2:hover{
+    cursor:pointer;
+  }
+
+.containerB2{
+    height: 30px;
+    width:140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    visibility: hidden;
+    
+  }
+
+.containerB2-active{
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+/* efeitos hambuguer Tela relatar*/
+.menuB3{
+    width:15px;
+    height:35px;
+    background: black;
+    border-radius: 50%;
+    font-size:30px;
+    z-index: 3;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+.menuB3:hover{
+    cursor:pointer;
+  }
+
+.containerB3{
+    height: 30px;
+    width:140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    visibility: hidden;
+    
+  }
+
+.containerB3-active{
+    opacity: 1;
+    visibility: visible;
+    
+}
+/* efeitos hambuguer Tela Dispositivo*/
+.menuB4{
+    width:15px;
+    height:35px;
+    background: black;
+    border-radius: 50%;
+    font-size:30px;
+    z-index: 3;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+.menuB4:hover{
+    cursor:pointer;
+  }
+
+.containerB4{
+    height: 30px;
+    width:140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    visibility: hidden;
+    
+  }
+
+.containerB4-active{
+    opacity: 1;
+    visibility: visible;
+    
+}
