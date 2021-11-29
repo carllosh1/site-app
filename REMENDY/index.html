@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>REMENDY</title>
+    
+
+  
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300&family=Roboto&family=Rubik&display=swap" rel="stylesheet">
+    
+</head>
+<!-- font-family: 'Flamenco', cursive;
+     font-family: 'Rubik', sans-serif; -->
+<!-- Rede <span class="iconify" data-icon="fluent:cellular-data-1-20-filled" style="color: white;"></span> -->
+<!-- Bateria <span class="iconify" data-icon="mdi:battery-low" style="color: white;"></span> -->
+<!-- WIFI <span class="iconify" data-icon="bi:wifi" style="color: white;"></span> -->
+<!-- Adicionar <span class="iconify" data-icon="carbon:add-filled" style="color: #47419B;"></span> -->
+<!-- Delete <span class="iconify" data-icon="fluent:delete-24-regular" style="color: white;"></span> -->
+<!-- Voltar <span class="iconify" data-icon="ic:outline-arrow-back-ios" style="color: white;"></span> -->
+<!-- Editar <span class="iconify" data-icon="ci:edit" style="color: white;"></span> -->
+<!-- Menu <span class="iconify" data-icon="carbon:overflow-menu-vertical" style="color: white;"></span> -->
+<body>
+    <div class="container">
+
+        
+   <!--Tela Principal  -->
+        <div class="app">
+            
+            <div class="grid">
+       
+                <!-- Header -->
+                    <header>
+                        <span class="horario rubik" style="color: white;">21:17</span>
+                        <div class="icons">
+                            <span class="iconify" data-icon="bi:wifi" style="color: white;"></span>
+                            <span class="iconify" data-icon="fluent:cellular-data-1-20-filled" style="color: white;"></span>
+                            <span class="iconify" data-icon="mdi:battery-low" style="color: white;"></span> 
+                        </div>
+                    </header>
+                <!-- LOGO -->
+                        <img src="imgs/LOGO (2).png" alt="">
+                <!-- Conteudo principal -->
+                    <main class="main1">
+                        <h1  class="titulo">Remendy</h1>
+                        <p class="texto">Cotrole de medicação para aqueles que precisam de cuidados</p>
+                    </main>
+                <!--Footer  -->
+                    <button  onclick="alterar()" class="button" style="cursor: pointer;">Cadastrar Medicamentos </button> 
+                    <footer></footer>
+            </div>
+        </div>
+    <!--***********************-->
+    
+    <!-- Tela de cadastro -->
+    <div class="app tela2">
+        <div class="grid">
+        
+            <!-- Header -->
+                <header>
+                    <span class="horario rubik" style="color: white;">21:17</span>
+                    <div class="icons">
+                        <span class="iconify" data-icon="bi:wifi" style="color: white;"></span>
+                        <span class="iconify" data-icon="fluent:cellular-data-1-20-filled" style="color: white;"></span>
+                        <span class="iconify" data-icon="mdi:battery-low" style="color: white;"></span> 
+                    </div>
+                </header>
+            <!-- Navegação -->
+            <nav>
+          
+                <div class="containerB">
+     <!--cadastro  -->      <button class="itens item4"><span class="iconify " data-icon="fluent:add-12-regular" style="color: white;"></span></button>
+     <!--estoque  -->       <button onclick="alterar2()" class="itens item3"><span class="iconify " data-icon="ri:medicine-bottle-line" style="color: white;"></span></button>
+     <!--sicronizar  -->   <button onclick="alterar4 ()" class="itens item2"><span class="iconify " data-icon="mdi:cloud-refresh" style="color: white;"></span></button>
+    <!-- relatar  -->      <button onclick="alterar5()"  class="itens item1"><span class="iconify " data-icon="mdi:alert" style="color: white;"></span></button>
+                </div>
+                <div >
+                 <button class="menuB" onclick="ativarMenu()"><span class="iconify" data-icon="carbon:overflow-menu-vertical" style="color: white;"></span></button>
+              </div>
+              </nav>
+            
+            <!-- Conteudo principal -->
+                <main class="main2">
+                    <h1 class="titulo titulo2">Cadastro de Medicamento</h1>
+
+                    <form action="#">
+                        
+                        <div class="row">
+                            <div class="col s12">
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  
+                                  <input type="text" id="nome" class="input">
+                                  <label for="nome-input">Nome medicamento</label>
+                                  <input type="text" id="nome" class="input">
+                                  <label for="nome-input">Nome medicamento</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                    </form>
+                </main>
+            <!--Footer  -->
+                <button   class="button button2 grey">Enviar Imagem </button>
+                <button  onclick="alterar2()" class="button button2">Salvar</button>  
+                <footer></footer>
+        </div>
+    </div>
+    <!--***********************-->
+    
+    <!-- Tela de estoque -->
+        <div class="app tela3">
+            <div class="grid">
+            
+                <!-- Header -->
+                    <header>
+                        <span class="horario rubik" style="color: white;">21:17</span>
+                        <div class="icons">
+                            <span class="iconify" data-icon="bi:wifi" style="color: white;"></span>
+                            <span class="iconify" data-icon="fluent:cellular-data-1-20-filled" style="color: white;"></span>
+                            <span class="iconify" data-icon="mdi:battery-low" style="color: white;"></span> 
+                        </div>
+                    </header>
+                    <!-- Navegação -->
+                    <nav>
+          
+                        <div class="containerB2">
+             <!--cadastro  -->      <button onclick="alterar6()" class="itens item4"><span class="iconify " data-icon="fluent:add-12-regular" style="color: white;"></span></button>
+             <!--estoque  -->       <button class="itens item3"><span class="iconify " data-icon="ri:medicine-bottle-line" style="color: white;"></span></button>
+             <!--sicronizar  -->   <button onclick="alterar7 ()" class="itens item2"><span class="iconify " data-icon="mdi:cloud-refresh" style="color: white;"></span></button>
+            <!-- relatar  -->      <button onclick="alterar8()"  class="itens item1"><span class="iconify " data-icon="mdi:alert" style="color: white;"></span></button>
+                        </div>
+                        <div >
+                         <button class="menuB2" onclick="ativarMenu2()"><span class="iconify" data-icon="carbon:overflow-menu-vertical" style="color: white;"></span></button>
+                      </div>
+                      </nav>
+     
+                <!-- Conteudo principal -->
+                    <main class="main3">
+                        <h1 class="titulo titulo3">Estoque</h1>
+
+                    <!-- BLOCO 1 -->
+                        <div class="blocoRemedio">
+                            <div class="ftremedio">
+                                <img src="imgs/remedio.png" alt="imagem Lorazepan">
+                            </div>
+                            
+                            <div class="info"> 
+                                <h2>Lorazepam</h2>
+                                <p class="margin">12 em 12 horas</p>
+                                <p>30 capsulas</p>
+                            </div>
+                            
+                            <div class="iconsremedio">
+                                <span class="iconify ticon" data-icon="ci:edit" style="color: white;"></span>
+                                <span class="iconify ticon" data-icon="fluent:delete-24-regular" style="color: white;"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="lineEstoque"></div>
+
+                         <!-- BLOCO 2 -->
+                         <div class="blocoRemedio">
+                            <div class="ftremedio">
+                                <img src="imgs/remedio.png" alt="imagem Lorazepan">
+                            </div>
+                            
+                            <div class="info"> 
+                                <h2>Lorazepam</h2>
+                                <p class="margin">12 em 12 horas</p>
+                                <p>30 capsulas</p>
+                            </div>
+                            
+                            <div class="iconsremedio">
+                                <span class="iconify ticon" data-icon="ci:edit" style="color: white;"></span>
+                                <span class="iconify ticon" data-icon="fluent:delete-24-regular" style="color: white;"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="lineEstoque"></div>
+
+                         <!-- BLOCO 3 -->
+                         <div class="blocoRemedio">
+                            <div class="ftremedio">
+                                <img src="imgs/remedio.png" alt="imagem Lorazepan">
+                            </div>
+                            
+                            <div class="info"> 
+                                <h2>Lorazepam</h2>
+                                <p class="margin">12 em 12 horas</p>
+                                <p>30 capsulas</p>
+                            </div>
+                            
+                            <div class="iconsremedio">
+                                <span class="iconify ticon" data-icon="ci:edit" style="color: white;"></span>
+                                <span class="iconify ticon" data-icon="fluent:delete-24-regular" style="color: white;"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="lineEstoque"></div>
+
+                         <!-- BLOCO 4-->
+                         <div class="blocoRemedio">
+                            <div class="ftremedio">
+                                <img src="imgs/remedio.png" alt="imagem Lorazepan">
+                            </div>
+                            
+                            <div class="info"> 
+                                <h2>Lorazepam</h2>
+                                <p class="margin">12 em 12 horas</p>
+                                <p>30 capsulas</p>
+                            </div>
+                            
+                            <div class="iconsremedio">
+                                <span class="iconify ticon" data-icon="ci:edit" style="color: white;"></span>
+                                <span class="iconify ticon" data-icon="fluent:delete-24-regular" style="color: white;"></span>
+                            </div>
+                        </div>
+                    </main>
+                <!--Footer  -->
+                     <div class="iconAdicionar">
+                        <img class="adicionar" src="imgs/Adicionar.png" alt="icon adicionar">
+                     </div>
+                    <footer class="footer3"></footer>
+            </div>
+        </div>
+    <!--***********************-->
+    
+    <!--Tela de sincronização-->
+        <div class="app tela4">
+            <div class="grid">
+            
+                <!-- Header -->
+                    <header>
+                        <span class="horario rubik" style="color: white;">21:17</span>
+                        <div class="icons">
+                            <span class="iconify" data-icon="bi:wifi" style="color: white;"></span>
+                            <span class="iconify" data-icon="fluent:cellular-data-1-20-filled" style="color: white;"></span>
+                            <span class="iconify" data-icon="mdi:battery-low" style="color: white;"></span> 
+                        </div>
+                    </header>
+                <!-- LOGO -->
+                        <img src="imgs/LOGO (2).png" alt="">
+                <!-- Conteudo principal -->
+                    <main class="main4"> 
+                        <h1 class="titulo titulo4">Sincronização do 
+                            Dispositivo</h1>
+                       
+                    </main>
+                <!--Footer  -->
+                    <button  onclick="alterar3()" class="button4">Sincronizar</button> 
+                    <footer></footer>
+            </div>
+            
+        </div>
+        <!--***********************-->
+       
+        <!-- Tela de problemas -->
+        <div class="app tela5">
+            <div class="grid">
+            
+                <!-- Header -->
+                    <header>
+                        <span class="horario rubik" style="color: white;">21:17</span>
+                        <div class="icons">
+                            <span class="iconify" data-icon="bi:wifi" style="color: white;"></span>
+                            <span class="iconify" data-icon="fluent:cellular-data-1-20-filled" style="color: white;"></span>
+                            <span class="iconify" data-icon="mdi:battery-low" style="color: white;"></span> 
+                        </div>
+                    </header>
+                    <nav>
+          
+                        <div class="containerB3">
+             <!--cadastro  -->      <button onclick="alterar9()" class="itens item4"><span class="iconify " data-icon="fluent:add-12-regular" style="color: white;"></span></button>
+             <!--estoque  -->       <button onclick="alterar10()"class="itens item3"><span class="iconify " data-icon="ri:medicine-bottle-line" style="color: white;"></span></button>
+             <!--sicronizar  -->   <button  onclick="alterar11()"class="itens item2"><span class="iconify " data-icon="mdi:cloud-refresh" style="color: white;"></span></button>
+            <!-- relatar  -->      <button           class="itens item1"><span class="iconify " data-icon="mdi:alert" style="color: white;"></span></button>
+                        </div>
+                        <div >
+                         <button class="menuB3" onclick="ativarMenu3()"><span class="iconify" data-icon="carbon:overflow-menu-vertical" style="color: white;"></span></button>
+                      </div>
+                      </nav>
+       
+                <!-- Conteudo principal -->
+                    <main class="main5">
+                        <h1 class="titulo5">Relatar problemas</h1>
+                        <div class="container5">
+                            <h3 class="subtitulo5">Algo não está funcionando</h3>
+                            <p class="texto5">Informe-nos sobre o recurso com falha</p>
+                            <div class="linha5"></div>
+
+                            <h3 class="subtitulo5">Dispositivo chegou com defeito</h3>
+                            <p class="texto5">Informe-nos sobre o estado do dispositivo</p>
+                            <div class="linha5"></div>
+                            <h3 class="subtitulo5">Devolução do produto</h3>
+                            <p class="texto5">Informe-nos do motivo da devolução</p>
+                            
+                            <div class="linha5"></div>
+                            <h3 class="subtitulo5">Problemas com suporte</h3>
+                            <p class="texto5">Não consegue falar com o suporte?</p>
+                            <div class="linhaF"></div>
+                            
+                        </div>
+                       
+                    </main>
+                    <footer class="footer5"></footer>
+              
+            </div>
+            
+        </div>
+        <!--***********************-->
+        
+        <!-- Tela de dispositivos -->
+        <div class="app tela6">
+            <div class="grid">
+            
+                <!-- Header -->
+                    <header>
+                        <span class="horario rubik" style="color: white;">21:17</span>
+                        <div class="icons">
+                            <span class="iconify" data-icon="bi:wifi" style="color: white;"></span>
+                            <span class="iconify" data-icon="fluent:cellular-data-1-20-filled" style="color: white;"></span>
+                            <span class="iconify" data-icon="mdi:battery-low" style="color: white;"></span> 
+                        </div>
+                    </header>
+                    <nav>
+          
+                        <div class="containerB4">
+             <!--cadastro  -->      <button onclick="alterar12()" class="itens item4"><span class="iconify " data-icon="fluent:add-12-regular" style="color: white;"></span></button>
+             <!--estoque  -->       <button onclick="alterar13()"class="itens item3"><span class="iconify " data-icon="ri:medicine-bottle-line" style="color: white;"></span></button>
+             <!--sicronizar  -->   <button  onclick="alterar14()"class="itens item2"><span class="iconify " data-icon="mdi:cloud-refresh" style="color: white;"></span></button>
+            <!-- relatar  -->      <button   onclick="alterar15()" class="itens item1"><span class="iconify " data-icon="mdi:alert" style="color: white;"></span></button>
+                        </div>
+                        <div >
+                         <button class="menuB4" onclick="ativarMenu4()"><span class="iconify" data-icon="carbon:overflow-menu-vertical" style="color: white;"></span></button>
+                      </div>
+                      </nav>
+     
+                <!-- Conteudo principal -->
+                    <main class="main6">
+                        <h1 class="titulo titulo3">Dispositivo</h1>
+
+                            
+                       
+                    </main>
+                <!--Footer  -->
+                     <div class="iconAdicionar">
+                        <img class="adicionar" src="imgs/Adicionar.png" alt="icon adicionar">
+                     </div>
+                    <footer class="footer3"></footer>
+            </div>
+        </div>
+        <!--***********************-->
+    </div>
+
+    <script src="Js/script.js"></script>
+</body>
+</html>
